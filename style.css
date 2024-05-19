@@ -602,6 +602,10 @@ input {
     
 
 }
+
+.white{
+    color: #fff;
+}
 .form-container {
     position: absolute;
     top: 0;
