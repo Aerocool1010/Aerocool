@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale
+   scale=1.0">
+   <title> AeroCool </title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet " type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+   <link rel="icon" type="image/x-icon" href="img/logo2.png">
+   
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   
+
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="header">
+ <div class="container">
+   <div class="navbar">
+        <div class="logo">
+            <img src="img/logo2.png" width="125px">
+        </div>
+        <nav>
+            <ul id="menuitems">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        <div class="shopping">
+        <img src="img/icon2.png" class= "cart-icon"width="30px" height="30px" alt="">
+        <span class="quantity">0</span>
+        </div>
+        <img src="img/menu-icon.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+  </div>
+</div>
+<div class="split">Split Type</div>
+<div class="list">
+          
+</div>
+
+
+<div class="card">
+<h1>Checklist</h1>
+<ul class="listCard">
+</ul>
+<div class="checkOut">
+    <div class="total">0</div>
+    <div class="closeShopping">Close</div>
+</div>
+</div>
+
+<a href="product1.html" class="btn">Window Type &#8594;</a>
+
+<script src="app.js"></script>
+<!---- Footer ---->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Contact Us</h3>
+                <p><p><i class="fa fa-map-marker-alt me-3"></i>Mayor J.Posadas Ave, Sucat, Muntinlupa, 1770 Metro Manila</p>
+                <p><i class="fa fa-phone-alt me-3"></i>09201142568</p>
+                <p><i class="fa fa-envelope me-3"></i>aerocool1010@gmail.com</p></p>
+            </div>
+            <div class="footer-col-2">
+                <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                    </ul>
+                </div>
+            <div class="footer-col-3">
+                <img src="img/logo2.png">
+            </div>
+        </div>
+        <hr>
+        <p class="copywrite"> copywrite 2024 - AeroCool</p>
+    </div>
+</div>
+<script>
+var menuitems = document.getElementById("menuitems");
+
+menuitems.style.maxHeight = "0px";
+
+function menutoggle(){
+    if (menuitems.style.maxHeight == "0px")
+    {
+          menuitems.style.maxHeight = "200px";
+    }
+   else
+   {
+         menuitems.style.maxHeight = "0px";
+   }
+}
+</script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init({
+    duration: 1000
+});
+</script>
+
+</body>
+</html>
